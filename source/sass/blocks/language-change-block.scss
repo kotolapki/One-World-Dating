@@ -1,0 +1,26 @@
+.language-change-block {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.language-change-block__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.language-change-block__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  @include interactive;
+}
+
+@media(min-width: $desktop-width) {
+  .language-change-block__item {
+    &:not(:last-child) {
+      margin-right: 10.7px;
+    }
+  }
+}

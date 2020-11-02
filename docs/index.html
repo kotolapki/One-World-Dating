@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One World Dating</title>
+  <meta name="description" content="Dating site">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="heart.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/Dosis/Dosis-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h1 class="visually-hidden">Dating site "One World Dating"</h1>
+    <nav class="navigation">
+      <ul class="navigation__list container">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">About</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Contact</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">FAQs</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Blog</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Online Safety</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Terms of Use</a>
+        </li>
+      </ul>
+      <button class="navigation__button" aria-label="open/close navigation button" type="button">
+        <span class="navigation__button-text">Menu</span>
+        <span class="navigation__button-burger"></span>
+      </button>
+    </nav>
+    <ul class="social-links__list">
+      <li class="social-links__item">
+        <a class="social-links__link" href="#" aria-label="share">
+          <svg class="social-links__icon" width="24px" height="24px">
+            <use xlink:href="img/svg/sprites.svg#share-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a class="social-links__link" href="#" aria-label="facebook">
+          <img class="social-links__image" src="img/icons/facebook-icon.png" alt="facebook logo" width="24" height="24">
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a class="social-links__link" href="#" aria-label="instagram">
+          <svg class="social-links__icon"  width="24px" height="24px">
+            <use xlink:href="img/svg/sprites.svg#insta-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a class="social-links__link" href="#" aria-label="twitter">
+          <svg class="social-links__icon"  width="24px" height="20px">
+            <use xlink:href="img/svg/sprites.svg#twitter-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="greeting-block">
+      <div class="greeting-block__container container">
+        <img class="greeting-block__logo" src="img/content/logo.png" alt="site logo" width="446" height="281">
+        <h2 class="greeting-block__header">Find someone to click with</h2>
+        <div class="greeting-block__button-wrapper">
+          <button class="greeting-block__button" type="button">
+            <span class="greeting-block__button-text">Get Started</span>
+            <span class="greeting-block__button-arrow"></span>
+          </button>
+        </div>
+        <ul class="greeting-block__list">
+          <li class="greeting-block__item">
+            <div class="greeting-block__icon-wrapper greeting-block__icon-wrapper--first">
+              <svg class="greeting-block__icon greeting-block__icon--worldwide">
+                <use xlink:href="img/svg/sprites.svg#worldwide-icon"></use>
+              </svg>
+            </div>
+            <p class="greeting-block__caption greeting-block__caption--first">One World</p>
+          </li>
+          <li class="greeting-block__item">
+            <div class="greeting-block__icon-wrapper greeting-block__icon-wrapper--second">
+              <svg class="greeting-block__icon greeting-block__icon--hearts">
+                <use xlink:href="img/svg/sprites.svg#two-hearts-icon"></use>
+              </svg>
+            </div>
+            <p class="greeting-block__caption greeting-block__caption--second">Two Hearts</p>
+          </li>
+          <li class="greeting-block__item">
+            <div class="greeting-block__icon-wrapper greeting-block__icon-wrapper--third">
+              <svg class="greeting-block__icon greeting-block__icon--connect">
+                <use xlink:href="img/svg/sprites.svg#wifi-icon"></use>
+              </svg>
+            </div>
+            <p class="greeting-block__caption greeting-block__caption--third">One Site</p>
+          </li>
+        </ul>
+        <h3 class="greeting-block__greeting">Welcome!</h3>
+        <blockquote class="greeting-block__quote">
+          <p class="greeting-block__quote-text">“Love is a promise, love is a souvenir, once given never forgotten, never let it disappear.”</p>
+          <cite class="greeting-block__quote-author">- John Lennon</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="form-block">
+      <div class="container">
+        <form class="form-block__form" action="#" method="post">
+          <div class="form-block__container">
+            <h2 class="form-block__header">It`s free to join</h2>
+            <button class="form-block__facebook-sign-up-btn" type="button">
+              <img class="form-block__facebook-icon" src="img/icons/facebook-sign-up-icon.png" alt="facebook icon" width="6" height="14">
+              <span class="form-block__sign-up-btn-text">Sign up with facebook</span>
+            </button>
+            <span class="form-block__separator">or</span>
+            <label class="form-block__label" for="email">Email</label>
+            <input class="form-block__input" type="email" name="email" id="email" placeholder="Email" autocomplete="off" minlength="5" maxlength="25" required >
+            <label class="form-block__label" for="username">Username</label>
+            <input class="form-block__input" type="text" name="username" id="username" placeholder="Username" autocomplete="off" minlength="2" maxlength="25" pattern="[A-Za-z]{2,}" required>
+            <label class="form-block__label" for="password">Password</label>
+            <input class="form-block__input" type="password" name="password" id="password" placeholder="Password" autocomplete="off" minlength="8" maxlength="30" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+            <label class="form-block__label" for="confirmPassword">Confirm password</label>
+            <input class="form-block__input" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" autocomplete="off" minlength="8" maxlength="30" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+            <button class="form-block__submit-btn" type="submit">Let`s Go!</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="join-block">
+      <h2 class="visually-hidden">Join now</h2>
+      <div class="container">
+        <div class="join-block__container">
+          <div class="join-block__wrapper">
+            <span class="join-block__big-text">Join now</span>
+            <span class="join-block__little-text">It`s free!</span>
+            <button class="join-block__button" type="button">Get started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="subscribe-block container">
+      <h2 class="visually-hidden">Subscribe for our newsletter</h2>
+      <p class="subscribe-block__text">Sign up for our newsletter</p>
+      <form class="subscribe-block__form" action="#" method="post">
+        <label class="subscribe-block__label" for="subscribeEmail">Email Address</label>
+        <input class="subscribe-block__input" type="email" name="subscribeEmail" id="subscribeEmail" placeholder="Email Address" autocomplete="off" minlength="5" maxlength="25"  required>
+        <button class="subscribe-block__submit-btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <nav class="footer-navigation">
+      <ul class="footer-navigation__list container">
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">About</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Contact</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">FAQs</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Blog</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Online Safety</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Terms of Use</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="language-change-block container">
+      <h2 class="visually-hidden">Language change section</h2>
+      <ul class="language-change-block__list">
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Czech">
+            <img src="img/icons/Czech.png" alt="Czech flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Greek">
+            <img src="img/icons/Greek.png" alt="greek flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to English">
+            <img src="img/icons/English.png" alt="English flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Taiwanese">
+            <img src="img/icons/Taiwanese.png" alt="Taiwanese flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Japanese">
+            <img src="img/icons/Japanese.png" alt="Japanese flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Bosnian">
+            <img src="img/icons/Bosnian.png" alt="Bosnian flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to German">
+            <img src="img/icons/German.png" alt="German flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Italian">
+            <img src="img/icons/Italian.png" alt="Italian flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Dutch">
+            <img src="img/icons/Dutch.png" alt="Dutch flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Chinese">
+            <img src="img/icons/Chinese.png" alt="Chinese flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Arabic">
+            <img src="img/icons/Arabic.png" alt="Arabic flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to French">
+            <img src="img/icons/French.png" alt="French flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Slovenian">
+            <img src="img/icons/Slovenian.png" alt="Slovenian flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Spanish">
+            <img src="img/icons/Spanish.png" alt="Spanish flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Korean">
+            <img src="img/icons/Korean.png" alt="Korean flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Portuguese">
+            <img src="img/icons/Portuguese.png" alt="Portuguese flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Norwegian">
+            <img src="img/icons/Norwegian.png" alt="Norwegian flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Russian">
+            <img src="img/icons/Russian.png" alt="Russian flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Polish">
+            <img src="img/icons/Polish.png" alt="Polish flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Swedish">
+            <img src="img/icons/Swedish.png" alt="Swedish flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Romanian">
+            <img src="img/icons/Romanian.png" alt="Romanian flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Danish">
+            <img src="img/icons/Danish.png" alt="Danish flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Turkey">
+            <img src="img/icons/Turkey.png" alt="Turkey flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Slovak">
+            <img src="img/icons/Slovak.png" alt="Slovak flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Vietnamese">
+            <img src="img/icons/Vietnamese.png" alt="Vietnamese flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Croatian">
+            <img src="img/icons/Croatian.png" alt="Croatian flag" width="16" height="11">
+          </a>
+        </li>
+        <li class="language-change-block__item">
+          <a class="language-change-block__link" href="#" aria-label="change language to Thai">
+            <img src="img/icons/Thai.png" alt="Thai flag" width="16" height="11">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="container">
+      <hr class="page-footer__separator">
+      <p class="page-footer__copyright">
+        © 2017 All World Dating Enterprise Company LLC. All rights reserved. We pledge never to share or sell your Email Address.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/svguse.js"></script>
+  <script src="js/open-menu.js"></script>
+</body>
+</html>

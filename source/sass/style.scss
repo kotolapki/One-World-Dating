@@ -1,0 +1,15 @@
+@import 'common/reset.scss';
+@import 'common/normalize.scss';
+@import 'common/fonts.scss';
+@import 'common/variables.scss';
+@import 'common/common.scss';
+@import 'common/mixins.scss';
+//blocks
+@import 'blocks/navigation.scss';
+@import 'blocks/greeting-block.scss';
+@import 'blocks/form-block.scss';
+@import 'blocks/join-block.scss';
+@import 'blocks/subscribe-block.scss';
+@import 'blocks/footer-navigation.scss';
+@import 'blocks/language-change-block.scss';
+@import 'blocks/page-footer.scss';

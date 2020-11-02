@@ -1,0 +1,344 @@
+.greeting-block {
+  background-image: url(../img/bg/smiling-people-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.greeting-block__container {
+  margin-bottom: 20px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting-block__logo {
+  margin-bottom: 20px;
+  width: 130px !important;
+  height: auto;
+}
+
+.greeting-block__header {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: $purple;
+  text-transform: uppercase;
+}
+
+.greeting-block__button-wrapper {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 25px;
+  border: 1px solid $purple1;
+}
+
+.greeting-block__button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: $purple1;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+
+  @include interactive;
+}
+
+.greeting-block__button-text {
+  margin-right: 10px;
+  color: white;
+}
+
+.greeting-block__button-arrow {
+  width: 2px;
+  height: 18px;
+  background-color: white;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -7px;
+    transform-origin: right;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '';
+    width: 8px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: -7px;
+    transform-origin: left;
+    transform: rotate(-45deg);
+  }
+}
+
+.greeting-block__list {
+  margin-bottom: 30px;
+  display: flex;
+  align-content: center;
+}
+
+.greeting-block__item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.greeting-block__icon-wrapper {
+  padding: 20px 0;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &--first {
+    background-color: $red1;
+  }
+  
+  &--second {
+    background-color: $red2;
+  }
+
+  &--third {
+    background-color: $orange;
+  }
+}
+
+.greeting-block__icon {
+  fill: white;
+  width: 50px;
+  height: 50px;
+}
+
+.greeting-block__caption {
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+
+  &--first {
+    background-color: $red3;
+  }
+  
+  &--second {
+    background-color: $red4;
+  }
+
+  &--third {
+    background-color: $orange1;
+  }
+}
+
+.greeting-block__greeting {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-align: center;
+  color: $purple;
+  font-size: 26px;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -4px;
+    left: -20px;
+    background-image: url(../img/svg/logo-heart.svg);
+    background-size: contain;
+    z-index: 1;
+  }
+}
+
+.greeting-block__quote-text {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.greeting-block__quote-author {
+  margin-right: 10px;
+  font-style: normal;
+  color: $red1;
+}
+
+.greeting-block__quote {
+  max-width: 786px;
+  text-align: right;
+}
+
+@media(min-width: $tablet-width) {
+  .greeting-block {
+    margin-bottom: 65px;
+  }
+
+  .greeting-block__container {
+    padding-top: 9%;
+  }
+
+  .greeting-block__logo {
+    margin-bottom: 30px;
+    width: 35% !important;
+  }
+
+  .greeting-block__header {
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+
+  .greeting-block__button-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .greeting-block__list {
+    margin-bottom: 60px;
+  }
+
+  .greeting-block__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .greeting-block__icon-wrapper {
+    padding: 30px 0;
+    width: 120px;
+  }
+
+  .greeting-block__greeting {
+    margin-bottom: 15px;
+    font-size: 30px;
+  
+    &::before {
+      width: 47px;
+      height: 47px;
+    }
+  }
+
+  .greeting-block__quote-text {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .greeting-block__quote-author {
+    font-size: 18px;
+    line-height: normal;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .greeting-block {
+    margin-bottom: 44px;
+  }
+
+  .greeting-block__logo {
+    margin-bottom: 69px;
+  }
+
+  .greeting-block__header {
+    margin-bottom: 55px;
+    font-size: 84px;
+  }
+
+  .greeting-block__button-wrapper {
+    margin-bottom: 75px;
+    padding: 10px;
+    border-radius: 32px;
+  }
+
+  .greeting-block__button {
+    padding: 12px 34px 16px 26px;
+    border-radius: 23px;
+  }
+
+  .greeting-block__button-text {
+    margin-right: 19px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .greeting-block__button-arrow {
+    height: 22px;
+  }
+
+  .greeting-block__list {
+    margin-bottom: 134px;
+  }
+
+  .greeting-block__item {
+    &:not(:last-child) {
+      margin-right: 39px;
+    }
+  }
+
+  .greeting-block__icon-wrapper {
+    width: 235px;
+
+    &--first {
+      padding: 64px 0 58px;
+    }
+
+    &--second {
+      padding: 57px 0 50px;
+    }
+
+    &--third {
+      padding: 57px 0 50px;
+    }
+  }
+
+  .greeting-block__icon {
+    &--worldwide {
+      width: 98px;
+      height: 98px;
+    }
+    
+    &--hearts {
+      width: 112px;
+      height: 112px;
+    }
+
+    &--connect {
+      width: 112px;
+      height: 112px;
+    }
+  }
+
+  .greeting-block__caption {
+    padding: 37px 0;
+    font-size: 32px;
+  }
+
+  .greeting-block__greeting {
+    margin-bottom: 33px;
+    padding-left: 67px;
+    letter-spacing: -1pt;
+    font-size: 54px;
+
+    &::before {
+      width: 112px;
+      height: 112px;
+      top: -21px;
+      left: -29px;
+    }
+  }
+
+  .greeting-block__quote-text {
+    margin-bottom: -2px;
+    font-size: 30px;
+  }
+
+  .greeting-block__quote-author {
+    margin-right: 0;
+    font-size: 30px;
+  }
+}
